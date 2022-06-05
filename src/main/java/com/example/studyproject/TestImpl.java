@@ -29,24 +29,24 @@ public class TestImpl implements TestInterface {
         int c1 = 5;
         int c2 = 7;
 
-        a1.setB(b1);    // b = b1
-        a2.setB(b2);    // b = b2
+        a1.setB(b1);
+        a2.setB(b2);
 
-        b1.setA(c1);    // a = 5
-        b2.setA(c2);    // a = 5 -> a = 7
+        b1.setA(c1);
+        b2.setA(c2);
 
-        c1++;   // 6
-        c2++;   // 8
+        c1++;
+        c2++;
 
-        b1.setA(b2.getA());     // a = 7 -> a = 7
-        b2.setA(b1.getA());     // a = 7 -> a = 7
+        b1.setA(b2.getA());
+        b2.setA(b1.getA());
 
-        System.out.println(a1.getB().getA());   // 7
-        System.out.println(a2.getB().getA());   // 7
-        System.out.println(b1.getA());          // 7
-        System.out.println(b2.getA());          // 7
-        System.out.println(c1);                 // 6
-        System.out.println(c2);                 // 8
+        System.out.println(a1.getB().getA());
+        System.out.println(a2.getB().getA());
+        System.out.println(b1.getA());
+        System.out.println(b2.getA());
+        System.out.println(c1);
+        System.out.println(c2);
 
     }
 
