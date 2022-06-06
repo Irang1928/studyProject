@@ -1,4 +1,4 @@
-package com.example.studyproject;
+package com.example.studyproject.practice;
 
 // 가변인자 오버라이딩, 오버로딩 예제
 // Alt + Insert , Alt + Shift + Enter , Shift * 2
