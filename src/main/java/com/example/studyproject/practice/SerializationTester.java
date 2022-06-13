@@ -12,7 +12,7 @@ public class SerializationTester {
         try (bos; ObjectOutputStream oos = new ObjectOutputStream(bos)) {
             oos.writeObject(article);
         } catch (Exception e) {
-            // ... 구현 생략
+            e.printStackTrace();
         }
         return bos.toByteArray();
     }
@@ -23,7 +23,7 @@ public class SerializationTester {
             Object object = ois.readObject();
             return (Article)object;
         } catch (Exception e) {
-            // ... 구현 생략
+            e.printStackTrace();
         }
         return null;
     }
